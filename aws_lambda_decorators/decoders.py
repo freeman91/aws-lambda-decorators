@@ -55,4 +55,5 @@ def decode_json(value):
 @functools.lru_cache()
 def decode_jwt(value):
     """Convert a jwt to a dictionary."""
-    return jwt.decode(value, verify=False)
+    return jwt.decode(value, algorithms=["HS256"], options={"verify_signature": False})
+ 

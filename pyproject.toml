@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "aws-lambda-decorators"
+version = "0.0.54"
+description = "A set of python decorators to simplify aws python lambda development"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+PyJWT = "^2.8.0"
+
+[tool.poetry.group.dev.dependencies]
+bandit = "^1.7.5"
+boto3 = "^1.29.3"
+prospector = "^1.10.3"
+pylint-quotes = "^0.2.3"
+schema = "^0.7.5"
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
